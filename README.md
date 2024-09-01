@@ -79,16 +79,15 @@ Below are the functions provided by the `DriveCell` library. Basic functions wor
 #### 7. **Toggle**
    - **Function for ESP32:** `Toggle(uint8_t power_percent)`
    - **Description for ESP32:** Toggles polarity or motor direction at a specified duty cycle using PWM.
-   -   - **Examples:**
+   -    - **Examples:**
      ```cpp
-     // ESP32
      myDriveCell.Toggle(50);  // Toggle direction at 50% power
      ```
+     
    - **Function for Other Arduino Devices:** `Toggle()`
    - **Description for Other Arduino Devices:** Toggles polarity or motor direction using simple GPIO toggling.
    - **Examples:**
      ```cpp
-     // Other Arduino Devices
      myDriveCell.Toggle();    // Toggle direction or polarity
      ```
 
