@@ -17,7 +17,7 @@ void setup() {
 }
 
 void loop() {
-  delay(100);/*Varry the fading timing by adjust this delay*/
+  delay(10);/*Varry the fading timing by adjust this delay*/
   if (led_brightness_flag == 1) {
     if (led_brightness < 100U) {
       led_brightness++;
