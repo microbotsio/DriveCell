@@ -17,8 +17,6 @@ uint8_t speed_percentage = 0;
 void setup() {
   Motor1.Init();
   Motor2.Init();
-  Motor1.Tone();
-  Motor2.Tone();
   speed_percentage = 80; /*Set Motor to 80% power*/
 }
 
@@ -50,8 +48,6 @@ void loop() {
       /*Turn off both motors*/
       Motor1.Drive(1, 0);
       Motor2.Drive(1, 0);
-      Motor1.Tone();
-      Motor2.Tone();
       if (speed_percentage < 95) {
         speed_percentage = speed_percentage + 5; /*increment speed*/
       } else {
