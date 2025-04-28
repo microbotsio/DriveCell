@@ -35,6 +35,9 @@ void DriveCell::Init() {
   } else {
     /*Skip*/
   }
+  Serial.print(">> DriveCell");
+  Serial.print(dc_num);
+  Serial.println(": Ready to Use");
 }
 
 void DriveCell::Run(bool smooth, uint8_t power_percent, uint16_t flip_speed_ms) {
